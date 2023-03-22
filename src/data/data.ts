@@ -7,4 +7,4 @@ export const ImageData = [
     "/image4.svg",
     "/image5.svg",
     "/image6.svg",
-  ];
+];

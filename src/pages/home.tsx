@@ -4,7 +4,7 @@ import Header from "../component/navigation/nav";
 import Profile from "../component/profile/profile";
 import Items from "../component/items/items"
 import "../styles/home.scss";
-import { useGetDataQuery } from "../api/apiSlice"
+import { useGetDataQuery } from "../api/apiSlice";
 
 
 const Home = () => {
