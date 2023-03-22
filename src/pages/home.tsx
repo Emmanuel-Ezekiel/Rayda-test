@@ -1,7 +1,9 @@
 import React from "react";
 import { useAppDispatch, useAppSelector } from "../hooks/hooks";
 import ApiRequest from "../api/api";
-import { ImageData } from "../data/data"
+import { ImageData } from "../data/data";
+import Header from "../component/navigation/nav";
+import "../styles/home.scss";
 
 const Home = () => {
   //state from the store
@@ -16,16 +18,17 @@ const Home = () => {
     dispatch(fetchData());
   }, [dispatch]);
 
-
   // created a new data because the images from the server is showing invalid, so i downloaded the images from the figma, then join the new image and the data from the server;
   const newData = data?.map((item: any, i: number): any => ({
     ...item,
     icon: ImageData[i % ImageData.length],
   }));
 
-  console.log("data",newData);
-
-  return <div></div>;
+  return (
+    <main>
+      <Header />
+    </main>
+  );
 };
 
 export default Home;
