@@ -12,7 +12,6 @@
       "redux",
       "react-redux",
       "redux-persist"
-      
     ],
     "allowJs": true,
     "skipLibCheck": true,

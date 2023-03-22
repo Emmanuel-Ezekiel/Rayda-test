@@ -8,9 +8,7 @@ import { useGetDataQuery } from "../api/apiSlice"
 
 
 const Home = () => {
-  //state from the store
-  // const { data,  loading }: any = useAppSelector((state) => state.data);
-
+  
   const { data, isLoading } = useGetDataQuery();
 
   //created a new data because the images from the server is showing image not found, so i downloaded the images from the figma, then join the new image and the data from the server;
@@ -18,8 +16,6 @@ const Home = () => {
     ...item,
     icon: ImageData[i % ImageData.length],
   }));
-
- 
 
   return (
     <main>
