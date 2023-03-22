@@ -1,8 +1,17 @@
 main {
-    width: 100%;
-    height: 100%;
-    background: #FCFCFD;
-    position: relative;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #fcfcfd;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  section {
+    width: 1294px;
+    height: 1215px;
+    border: 1px solid;
+    margin: 48px 32px;
+  }
 }

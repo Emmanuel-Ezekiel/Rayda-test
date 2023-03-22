@@ -3,6 +3,7 @@ import { useAppDispatch, useAppSelector } from "../hooks/hooks";
 import ApiRequest from "../api/api";
 import { ImageData } from "../data/data";
 import Header from "../component/navigation/nav";
+import Profile from "../component/profile/profile";
 import "../styles/home.scss";
 
 const Home = () => {
@@ -27,6 +28,9 @@ const Home = () => {
   return (
     <main>
       <Header />
+      <section>
+        <Profile />
+      </section>
     </main>
   );
 };
