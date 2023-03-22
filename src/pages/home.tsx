@@ -28,14 +28,14 @@ const Home = () => {
     icon: ImageData[i % ImageData.length],
   }));
 
-  console.log(newData)
+ 
 
   return (
     <main>
       <Header />
       <section>
         <Profile />
-        <Items data={newData}  loading={loading}/>
+        <Items data={newData} loading={loading}/>
       </section>
     </main>
   );
