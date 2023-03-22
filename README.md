@@ -12,7 +12,6 @@ Rayda Assessment Test
 1. Start the server: `npm start`
 2. Open the application in your web browser: `http://localhost:3000`
 
-## Usage examples
 
 
 
