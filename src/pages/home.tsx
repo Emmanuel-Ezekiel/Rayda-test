@@ -10,7 +10,7 @@ import "../styles/home.scss";
 
 const Home = () => {
   //state from the store
-  const { data }: any = useAppSelector((state) => state.data);
+  const { data,  loading }: any = useAppSelector((state) => state.data);
 
   //Api function
   const { fetchData } = ApiRequest();
@@ -35,7 +35,7 @@ const Home = () => {
       <Header />
       <section>
         <Profile />
-        <Items data={newData}/>
+        <Items data={newData}  loading={loading}/>
       </section>
     </main>
   );
