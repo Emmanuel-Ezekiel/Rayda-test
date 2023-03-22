@@ -4,7 +4,9 @@ import ApiRequest from "../api/api";
 import { ImageData } from "../data/data";
 import Header from "../component/navigation/nav";
 import Profile from "../component/profile/profile";
+import Items from "../component/items/items"
 import "../styles/home.scss";
+
 
 const Home = () => {
   //state from the store
@@ -12,6 +14,7 @@ const Home = () => {
 
   //Api function
   const { fetchData } = ApiRequest();
+
   //Redux action
   const dispatch = useAppDispatch();
 
@@ -25,11 +28,14 @@ const Home = () => {
     icon: ImageData[i % ImageData.length],
   }));
 
+  console.log(newData)
+
   return (
     <main>
       <Header />
       <section>
         <Profile />
+        <Items data={newData}/>
       </section>
     </main>
   );

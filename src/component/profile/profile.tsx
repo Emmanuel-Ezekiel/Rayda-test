@@ -18,17 +18,20 @@ const Profile = () => {
             <div className="content">
               <div className="heading">
                 <div className="text">
-                    <h2>Starts in: 3 days : 2 hours : 24 minutes </h2>
-                    <div className="status">
-                        <div className="badge">
-                            <div className="dot"></div>
-                            <p>Not Live</p>
-                        </div>
-                        <p>Layers Auction</p>
+                  <h2>Starts in: 3 days : 2 hours : 24 minutes </h2>
+                  <div className="status">
+                    <div className="badge">
+                      <div className="dot"></div>
+                      <p>Not Live</p>
                     </div>
+                    <p>Layers Auction</p>
+                  </div>
                 </div>
 
-                <button> <FiThumbsUp width={20} height={20} /> Accept Invite</button>
+                <button>
+                  {" "}
+                  <FiThumbsUp width={20} height={20} /> Accept Invite
+                </button>
               </div>
             </div>
           </div>

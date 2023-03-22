@@ -11,7 +11,9 @@ main {
   section {
     width: 1294px;
     height: 1215px;
-    border: 1px solid;
     margin: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
   }
 }
