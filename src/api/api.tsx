@@ -9,8 +9,8 @@ const ApiRequest = () => {
     // Used RTK QUERY to Fetch Data form  the  API
   const fetchData = createAsyncThunk("data/fetchData", async () => {
     const { data } = await axios.get(Link);
-    console.log(data)
-    return data;
+    // console.log(data)
+    return data.data;
   });
 
   return {
